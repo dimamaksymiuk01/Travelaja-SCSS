@@ -1,0 +1,177 @@
+.header {
+  font-family: "Poppins", sans-serif;
+  width: 1280px;
+  height: 720px;
+  background-image: url("../img/home/background.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  color: white;
+  .head {
+    padding-top: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    span {
+      font-size: 33.8px;
+    }
+    ul {
+      justify-content: center;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      text-decoration: none;
+      cursor: pointer;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li:hover {
+        font-weight: bold;
+      }
+      @media screen and (max-width: 800px) {
+        display: none;
+        }
+    }
+    .country {
+      @include flex;
+      gap: 8px;
+      span {
+        font-size: 16px;
+        font-weight: bold;
+        margin-top: 2px;
+      }
+    }
+  }
+  .exp {
+    width: 100%;
+    @include flex;
+  }
+  .explore {
+    margin-top: 110px;
+    text-align: center;
+    width: 770px;
+    p:nth-child(1) {
+      font-size: 48px;
+      font-weight: bold;
+      line-height: 60px;
+    }
+    p:nth-child(2) {
+      font-size: 18px;
+      line-height: 20px;
+    }
+  }
+}
+.inpt {
+  @include flex;
+}
+.input {
+  padding-left: 10px;
+  // background-color: white;
+  max-width: 1000px;
+  margin-top: 145px;
+  @include flex;
+  position: relative;
+  .location {
+    background-color: white;
+    width: 20px;
+    height: 62px;
+    @include flex;
+    padding-left: 5px;
+    }
+  .line {
+    background-color: rgb(132, 119, 119);
+    width: 2px;
+    height: 45px;
+    position: absolute;
+    margin-top: 9px;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+  }
+
+  .btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+    @media screen and (max-width: 780px) {
+      display: none;
+      }
+    img {
+      margin-left: 12px;
+      width: 15px;
+    }
+    &--primary {
+      background: #43b97f;
+      color: $button-text-color;
+      border-radius: 15px;
+      padding: 12px 36px;
+
+      &:hover {
+        background: darken($button-bg-color, 4%);
+      }
+
+      &:active {
+        background: $button-bg-color;
+        box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, 0.2);
+      }
+    }
+    &--inside {
+      margin-left: -230px;
+    }
+  }
+
+  .form {
+    &__field {
+      width: clamp(9.375rem, 3.693rem + 28.41vw, 21.875rem);
+      background-color: white;
+      color: rgb(23, 22, 22);
+      font: inherit;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+      border: 0;
+      outline: 0;
+      padding: 22px 18px;
+      border-color: white;
+    }
+  }
+  .forms {
+    &__fields {
+      border-radius: 1px;
+      width: clamp(9.375rem, 6.875rem + 12.5vw, 13.125rem);
+      height: 18.4px;
+      background-color: white;
+      color: rgb(23, 22, 22);
+      font: inherit;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+      border: 0;
+      outline: 0;
+      padding: 22px 18px;
+      border-color: white;
+    }
+  }
+  .formz {
+    &__fieldz {
+      width: clamp(9.375rem, 6.534rem + 14.2vw, 15.625rem);
+      background-color: white;
+      color: rgb(23, 22, 22);
+      font: inherit;
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+      border: 0;
+      outline: 0;
+      padding: 22px 18px;
+      border-color: white;
+    }
+  }
+
+}
