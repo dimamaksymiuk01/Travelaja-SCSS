@@ -71,15 +71,20 @@
 }
 .input {
   padding-left: 10px;
-  // background-color: white;
-  max-width: 1000px;
+    max-width: 1000px;
   margin-top: 145px;
   @include flex;
   position: relative;
+  @media screen and (max-width: 898px) {
+      gap: 5px;
+  }
+  .loc {
+    display: flex;
+  }
   .location {
     background-color: white;
     width: 20px;
-    height: 62px;
+    height: 62.5px;
     @include flex;
     padding-left: 5px;
     }
@@ -89,14 +94,16 @@
     height: 45px;
     position: absolute;
     margin-top: 9px;
+    @media screen and (max-width: 898px) {
+      display: none;
+      }
   }
-
   .uppercase {
     text-transform: uppercase;
   }
 
   .btn {
-    display: inline-block;
+    display: block;
     background: transparent;
     color: inherit;
     font: inherit;
@@ -105,9 +112,11 @@
     padding: 0;
     transition: all 200ms ease-in;
     cursor: pointer;
-    @media screen and (max-width: 780px) {
-      display: none;
-      }
+    // width: clamp(12.5rem, 11.932rem + 2.84vw, 14.063rem);
+    // font-size: clamp(0.625rem, 0.557rem + 0.34vw, 0.813rem);
+    // @media screen and (max-width: 780px) {
+    //   display: none;
+    //   }
     img {
       margin-left: 12px;
       width: 15px;
@@ -129,6 +138,9 @@
     }
     &--inside {
       margin-left: -230px;
+      @media screen and (max-width: 740px) {
+        margin-left: 0px;
+      }
     }
   }
 
@@ -143,6 +155,11 @@
       outline: 0;
       padding: 22px 18px;
       border-color: white;
+      border-radius: 20px;
+
+      @media screen and (max-width: 445px) {
+        width: 200px;
+      }
     }
   }
   .forms {
@@ -158,6 +175,11 @@
       outline: 0;
       padding: 22px 18px;
       border-color: white;
+      
+      @media screen and (max-width: 445px) {
+        width: 200px;
+        margin-left: 5px;
+      }
     }
   }
   .formz {
@@ -171,7 +193,30 @@
       outline: 0;
       padding: 22px 18px;
       border-color: white;
+      @media screen and (max-width: 445px) {
+        width: 175px;
+      }
     }
   }
-
+  .knopka {
+    @include flex;
+    background-color: white;
+    @media screen and (max-width: 740px) {
+      background-color: rgba(255, 255, 255, 0);
+      display: grid;
+      gap: 5px;
+      justify-items: center;
+      .btn {
+        width: 230px;
+      }
+    }
+  }
+  // .knopka {
+  //   @include flex;
+  //   @media screen and (max-width: 445px) {
+  //     position: absolute;
+  //     margin-left: 227px;
+  //     margin-top: 250px;
+  //   }
+  // }
 }

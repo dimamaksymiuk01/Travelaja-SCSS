@@ -1,10 +1,6 @@
 @mixin flex {
   display: flex;
-  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-}
-@mixin abc {
-  background-color: blue;
 }
