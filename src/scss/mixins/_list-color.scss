@@ -7,3 +7,90 @@ $input-bg-color: #fff;
 $input-text-color: #a3a3a3;
 $button-bg-color: #7f8ff4;
 $button-text-color: #fff;
+
+@mixin libat {
+  li:nth-child(8):before {
+    background-image: url(..//img/profile.svg);
+  }
+  li:nth-child(9):before {
+    background-image: url(..//img/setting.svg);
+  }
+}
+@mixin liba {
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;  
+  }
+  li:nth-child(1):before {
+    background-image: url(..//img/category.svg);
+  }
+  li:nth-child(2):before {
+    background-image: url(..//img/chart.svg);
+  }
+  li:nth-child(3):before {
+    background-image: url(..//img/send.svg);
+  }
+  li:nth-child(4):before {
+    background-image: url(..//img/plus.svg);
+  }
+  li:nth-child(5):before {
+    background-image: url(..//img/upload.svg);
+  }
+  li:nth-child(6):before {
+    background-image: url(..//img/wallet.svg);
+  }
+  li:nth-child(7):before {
+    background-image: url(..//img/paper.svg);
+  }
+  li {
+    position: relative;
+    z-index: 5;
+    line-height: 160%;
+    cursor: pointer;
+    list-style: none;
+  }
+  li::before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(..//img/category.svg);
+    background-size: cover;
+    background-position: center center;
+    margin-right: 12px;
+    vertical-align: top;
+  }
+  li::after {
+    content: "";
+    display: inline-block;
+    background-color: blue;
+    width: 236px;
+    height: 50px;
+    position: absolute;
+    top: -12px;
+    right: 16px;
+    z-index: -1;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  li:hover::after {
+    opacity: 1;
+  }
+  span::after {
+    content: url("..//img/rectangle.svg");
+    display: inline-block;
+    width: 4px;
+    height: 26px;
+    position: absolute;
+    right: 30px;
+    opacity: 0;
+    z-index: 10;
+    border-radius: 1.5px;
+  }
+  li:hover {
+    span:after {
+      opacity: 1;
+    }
+  }
+}
