@@ -73,12 +73,17 @@
 }
 .input {
   padding-left: 10px;
-    max-width: 1000px;
+  max-width: 1000px;
   margin-top: 145px;
   @include flex;
   position: relative;
   @media screen and (max-width: 898px) {
       gap: 5px;
+      // bottom: 125px;
+  }
+  @media screen and (max-width: 445px) {
+    gap: 5px;
+    bottom: 125px;
   }
   .loc {
     display: flex;
