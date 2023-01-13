@@ -6,7 +6,7 @@
     .imgtravel {
         position: relative;
         width: 640px;
-        height: 500px;
+        height: clamp(21.25rem, 16.705rem + 19.39vw, 31.25rem);
         display: flex;
         margin-top: 60px;
         // background-color: rgb(0, 0, 0);
@@ -49,7 +49,45 @@
         }
     }
     .texttravel {
-        width: 640px;
-        background-color: red;
+        width: clamp(23.438rem, 15.909rem + 32.12vw, 40rem);
+        // background-color: red;
+        line-height: 45px;
+        p:nth-child(1) {
+            font-size: 17px;
+            color: #295943;
+        }
+        p:nth-child(2) {
+            font-size: 17px;
+            color: #3D3E48;
+            font-size: 27.65px;
+        }
+        p:nth-child(3) {
+            font-size: 17px;
+            color: #3D3E48;
+            right: 50px;
+            padding-right: 150px;
+            line-height: 25px;
+        }
+        .xtal {
+            margin-top: 45px;
+            display: grid;
+            grid-template-columns: 40% 40%;
+            line-height: 32px;
+            gap: 30px;
+            p:nth-child(odd) {
+                color: #295943;
+                font-size: 27.65px;
+            }
+            p:nth-child(even) {
+                color: #3D3E48;
+                font-size: 16px;
+            }
+            .help {
+            @media screen and (max-width: 853px) {
+                line-height: 22px;
+                padding-top: 9px;
+            }
+        }
+        }
     }
 }
