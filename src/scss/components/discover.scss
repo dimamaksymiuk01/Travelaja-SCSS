@@ -1,9 +1,13 @@
 .discover {
-    width: 1280x;
-    height: 250px;
-    display: flex;
-    background-image: url("../img/discover/header.png");
-    p {
-        width: 1280px;
+    width: 1280px;
+    .lorem {
+        margin-top: 15px;
+        span {
+            font-size: 68px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 28.8px;
+        }
     }
 }
