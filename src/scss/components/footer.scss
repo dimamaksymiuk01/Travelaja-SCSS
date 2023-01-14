@@ -39,7 +39,14 @@
             line-height: 30px;
             cursor: pointer;
         }
+        li:hover {
+            font-weight: bold;
+            cursor: pointer;
+        }
     }
+    @media screen and (max-width: 630px) {
+        display: none;
+      }
 }  
    .link {
     margin-left: 60px;
@@ -53,5 +60,95 @@
     img {
         margin-left: 3px;
     }
+    @media screen and (max-width: 630px) {
+        display: none;
+      }
    }
+   
+
+
+
+
+.footeradaptive {
+    @media screen and (min-width: 630px) {
+    display: none;
 }
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+         .links {
+            display: grid;
+            justify-content: center;
+    p {
+        color: white;
+        font-size: 19.2px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+    .travelaga {
+        width: 281px;
+        text-align: center;
+        margin-top: 20px;
+        // background-color: blue;
+        p:nth-child(1) {
+            font-size: 33.18px;
+            color: white;
+            line-height: 39.82px;
+        }
+        p:nth-child(2) {
+            padding-top: 20px;
+            font-size: 16px;
+            color: white;
+            line-height: 24px;
+        }
+    }
+img {
+    padding-left: 5px;
+}
+.dropbtn {
+    background-color: #02c768;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    width: 150px;
+    border-radius: 30px;
+    margin-left: 70px;
+    transform: scale(1.1);
+    transition: all 0.5s linear;
+  }
+    .dropdown-content {
+    display: none;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 20px;
+  }
+    .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropbtn {    background-color:  #CC3333}
+}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+  
+ 

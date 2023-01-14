@@ -1,5 +1,6 @@
 .travel {
     font-family: 'Poppins', sans-serif;
+
     @include flex;
     width: 1280px;
     height: 100%;
@@ -217,6 +218,7 @@
             background-color: #43B97F;
             transform: scale(1.1);
             transition: all 0.2s linear;
+            border-radius: 15px;
             p {
                 color: #FFFFFF;
                 span {
