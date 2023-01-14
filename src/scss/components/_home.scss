@@ -1,4 +1,5 @@
 .travel {
+    font-family: 'Poppins', sans-serif;
     @include flex;
     width: 1280px;
     height: 100%;
@@ -100,7 +101,6 @@
     width: clamp(20rem, 2.857rem + 85.71vw, 80rem);
     @include flex;
     margin-top: 50px;
-    font-family: 'Poppins', sans-serif;
     .text:nth-child(1) {
         width: clamp(20rem, 2.857rem + 85.71vw, 80rem);
         text-align: center;
@@ -183,10 +183,13 @@
         gap: 20px;
         margin-top: 50px;
         div {
-            width: 380px;
+            width: clamp(18.75rem, 17.321rem + 7.14vw, 23.75rem);
             height: 207px;
             background-color:  #fdf9f9;
             // border: 2px solid;
+            @media screen and (max-width: 739px) {
+                margin-top: 40px;
+            }
             p:nth-child(1) {
                 display: flex;
                 align-items: center;
@@ -221,5 +224,10 @@
                 }
             }
         }
+        
     }
+}
+.space {
+    width: 1280px;
+    height: 100px;
 }
