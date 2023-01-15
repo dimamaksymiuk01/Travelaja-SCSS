@@ -200,6 +200,11 @@
             margin-left: 10px;
             margin-top: 40px;
         }
+        button:hover {
+            background-color: #55a17c;
+            transform: scale(1.05);
+            transition: all 0.3s linear;
+        }
     }
 
   }
