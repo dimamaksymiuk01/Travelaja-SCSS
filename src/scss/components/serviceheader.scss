@@ -1,0 +1,200 @@
+.headerbase {
+    font-family: "Poppins", sans-serif;
+    width: 1280px;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    color: #3D3E48;
+    .head {
+      padding-top: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 40px;
+      padding-right: 40px;
+      span {
+        font-size: 33.8px;
+      }
+      ul {
+        justify-content: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+        text-decoration: none;
+        cursor: pointer;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li:hover {
+          font-weight: bold;
+          color: #43B97F;
+        }
+      }
+      .ulhead {
+        @media screen and (max-width: 900px) {
+          display: none;
+          }
+      }
+      .country {
+        gap: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        span {
+          font-size: 16px;
+          font-weight: bold;
+          margin-top: 2px;
+        }
+      }
+    }
+    .exp {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;  }
+    .explore {
+      margin-top: 110px;
+      text-align: center;
+      width: 770px;
+      p:nth-child(1) {
+        font-size: 48px;
+        font-weight: bold;
+        line-height: 60px;
+      }
+      p:nth-child(2) {
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+  
+    .hamburger-menu {
+      padding-bottom: 20px;
+      position: relative;
+      background-color: black;
+      width: 21px;
+      border-radius: 5px;
+      padding-right: 10px;
+      padding-left: 10px;
+      @media screen and (min-width: 900px) {
+        display: none;
+      } 
+    
+    #menu__toggle {
+      opacity: 0;
+    }
+    #menu__toggle:checked + .menu__btn > span {
+      transform: rotate(45deg);
+      
+    }
+    #menu__toggle:checked + .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0deg);
+      
+    }
+    #menu__toggle:checked + .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+      
+    }
+    #menu__toggle:checked ~ .menu__box {
+      left: 0 !important;
+      
+      // margin-left: -500px;
+    
+    }
+    .menu__btn {
+      // position: fixed;
+      top: 20px;
+      left: 200px;
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+      
+    }
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: #ffffff;
+      transition-duration: .25s;
+      
+    }
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+      
+      
+    }
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+      
+      
+    }
+    .menu__box {
+      position: absolute;
+      display: flex;
+      top: 50px;
+      left: -390px;
+      width: 300px;
+      height: 200px;
+      margin: 0;
+      padding: 30px 0;
+      list-style: none;
+      background-color: #e1d3d3;
+      box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+      transition-duration: .25s;
+      border-radius: 25px;
+
+    }
+    .menu__item {
+      display: block;
+      padding: 0;
+      color: #3D3E48;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+      transition-duration: .25s;  
+    
+    }
+    .menu__item:hover {
+      color: #43b97f;  
+    }
+    li {
+      display: grid;
+      grid-template-columns: 1fr 0fr;
+      overflow: hidden;
+      justify-content: center;
+      margin-top: 10px;
+      padding: 0;
+      width: 100px;
+      height: 30px;
+      
+    }
+    }
+    .backs {
+      background-color: blue;
+      width: 1280px;
+      height: 250px;
+      margin-top: 30px;
+      background-image: url("../img/service/header.png");
+      background-size: cover;
+      p {
+        font-size: 33.18px;
+        font-weight: bold;
+        color: white;
+        padding: 180px 0px 20px 40px;
+      }
+    }
+  }
