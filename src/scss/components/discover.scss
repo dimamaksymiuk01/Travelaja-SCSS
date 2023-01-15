@@ -52,12 +52,15 @@
 
   .center {
     display: flex;
-    margin-top: 20px;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 61px;
   }
   .left {
     width: clamp(20rem, 6.932rem + 55.76vw, 48.75rem);
+    @media screen and (max-width: 1139px) {
+        margin-top: 30px;
+    }
     .natureone {
         width: clamp(20rem, 6.932rem + 55.76vw, 48.75rem);
         height: clamp(12.5rem, 9.688rem + 12vw, 18.688rem);
@@ -202,3 +205,12 @@
   }
 
 }
+
+
+.spaces {
+    width: 100%;
+    height: 100px;
+    @media screen and (max-width: 1139px) {
+        display: none;
+    }
+  }
