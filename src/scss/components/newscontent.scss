@@ -1,0 +1,105 @@
+.news {
+    margin-top: 120px;
+    width: 1280px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+    .arct {
+        text-align: center;
+        color: #3D3E48;
+        @media screen and (min-width: 475px) {
+            padding-left: 30px;
+            padding-right: 30px;
+          } 
+    }
+    p:nth-child(1) {
+        font-size: clamp(1.25rem, 1.033rem + 0.93vw, 1.728rem);
+    }
+    p:nth-child(2) {
+        margin-top: 10px;
+        font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+    }
+    ul {
+        margin-top: clamp(1.875rem, 1.307rem + 2.42vw, 3.125rem);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: clamp(0.625rem, 0.057rem + 2.42vw, 1.875rem);
+        font-size: 16px;
+        .btn {
+            background-color: #ffffff;
+            width: 183px;
+            height: 49px;
+            border-radius: 10px;
+            color: #43B97F;
+            font-family: 'Poppins', sans-serif;
+            font-size: clamp(0.813rem, 0.727rem + 0.36vw, 1rem);
+            font-weight: bold;
+            border: 3px solid;
+            border-color: #ffffff;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #55a17c;
+            transform: scale(1.05);
+            transition: all 0.1s linear;
+            color: white;
+            cursor: pointer;
+        }
+        .btns {
+            background-color: #ffffff58;
+            width: 183px;
+            height: 49px;
+            border-radius: 10px;
+            color: rgb(0, 0, 0);
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: bold;
+            border: 3px solid;
+            border-color:  #ffffff58;
+            cursor: pointer;
+        }
+        .btns:hover {
+            background-color: black;
+            border-color: black;;
+            color: white;
+            transform: scale(1.05);
+            transition: all 0.1s linear;
+            cursor: pointer;
+        }
+    }
+    .newscard {
+        margin-top: 54px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        div {
+            width: clamp(18.75rem, 16.477rem + 9.7vw, 23.75rem);
+            height: clamp(23.438rem, 21.307rem + 9.09vw, 28.125rem);
+            padding-bottom: 20px;
+            img {
+                border-radius: 20px;
+                width: clamp(18.75rem, 16.477rem + 9.7vw, 23.75rem);
+            }
+                p:nth-child(2) {
+                    margin-top: 20px;
+                    font-size: clamp(0.938rem, 0.818rem + 0.51vw, 1.2rem);
+                    color: black;
+                    line-height: clamp(1.375rem, 1.018rem + 1.52vw, 2.16rem);
+                }
+                p:nth-child(3) {
+                    color: #3D3E48;
+                    font-size: clamp(0.813rem, 0.727rem + 0.36vw, 1rem);
+                    line-height: clamp(1.25rem, 1rem + 1.07vw, 1.8rem);
+                }
+        }
+        div:hover {
+            transform: scale(1.05);
+            transition: all 0.1s linear;
+            background-color: rgba(245, 241, 241, 0.346);
+            border-radius: 20px;
+        }
+    }
+}
