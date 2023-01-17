@@ -1,0 +1,58 @@
+.about {
+    width: 1280px;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 1px;
+    .booking {
+        margin-top: clamp(3.75rem, 2.614rem + 4.85vw, 6.25rem);
+        p {
+            text-align: center;
+        }
+        p:nth-child(1){
+            font-weight: bold;
+            font-size: clamp(1.25rem, 1.033rem + 0.93vw, 1.728rem);
+            color: #3D3E48;
+            line-height: clamp(1.563rem, 1.33rem + 0.99vw, 2.074rem);
+        }
+        p:nth-child(2){
+            font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+            color: #3D3E48;
+            line-height: clamp(1.25rem, 1rem + 1.07vw, 1.8rem);
+        }
+        .price {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+            gap: 20px;
+
+            
+            div {
+                width: clamp(20rem, 18.295rem + 7.27vw, 23.75rem);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                p {
+                    width: 100%;
+                    color: #3D3E48;
+                }
+                p:nth-child(2) {
+                    margin-top: clamp(0.938rem, 0.795rem + 0.61vw, 1.25rem);
+                    font-size: clamp(0.938rem, 0.709rem + 0.97vw, 1.44rem);
+                    line-height: clamp(1.25rem, 1.033rem + 0.93vw, 1.728rem);
+                    font-weight: bold;
+                }
+                p:nth-child(3) {
+                    font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+                    line-height: clamp(1.25rem, 1.033rem + 0.93vw, 1.728rem);
+                    margin-top: 10px;
+                }
+                img:hover {
+                    transform: scale(1.05);
+                    transition: all 0.1s linear;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
