@@ -55,4 +55,137 @@
             }
         }
     }
+    .boxcom {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 100px;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        div:nth-child(1) {
+            display: flex;
+            align-self: center;
+            flex-wrap: wrap;
+            max-width: 780px;
+            margin-left: 50px;
+            @media screen and (max-width: 1140px) {
+                margin-left: 0px;
+            }
+            p:nth-child(1) {
+                font-size: clamp(1.313rem, 1.124rem + 0.81vw, 1.728rem);
+                color: #3D3E48;
+                font-weight: bold;
+            }
+            p:nth-child(2) {
+                font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+                margin-top: clamp(0.75rem, 0.523rem + 0.97vw, 1.25rem);
+                color: #3D3E48;
+                line-height: clamp(1.313rem, 1.091rem + 0.95vw, 1.8rem);
+            }
+            p:nth-child(3) {
+                margin-top: clamp(0.188rem, -0.011rem + 0.85vw, 0.625rem);
+                font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+                color: #3D3E48;
+                line-height: clamp(1.313rem, 1.091rem + 0.95vw, 1.8rem);
+            }
+            @media screen and (max-width: 1140px) {
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+                justify-content: center;
+            }
+        }
+        div:nth-child(2) {
+            margin-right: 50px;
+            img {
+                width: clamp(20rem, 18.295rem + 7.27vw, 23.75rem);
+                height: clamp(24.625rem, 21.784rem + 12.12vw, 30.875rem);
+                border-radius: 20px;
+            }
+            @media screen and (max-width: 1140px) {
+                margin: 0px;
+            }
+        }
+    }
+    .ourteams {
+        max-width: 1280px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-top: 100px;
+        p:nth-child(1) {
+            color: #3D3E48;
+            font-size: 27.65px;
+            font-weight: bold;
+            @media screen and (max-width: 1139px) {
+                text-align: center;
+                margin-top: 50px;
+            }
+        }
+        p:nth-child(2) {
+            color: #3D3E48;
+            font-size: 16px;
+            margin-top: 10px;
+            @media screen and (max-width: 1139px) {
+                text-align: center;
+            }
+        }
+        .teamcard {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: clamp(1.25rem, 0.54rem + 3.03vw, 2.813rem);
+            margin-top: 50px;
+            img {
+                border-radius: 15px;
+            }
+            img:hover {
+                transform: scale(1.05);
+                transition: all 0.1s linear;
+                cursor: pointer;
+            }
+            p:nth-child(2) {
+                font-size: clamp(0.875rem, 0.727rem + 0.63vw, 1.2rem);
+                line-height: clamp(1.75rem, 1.564rem + 0.8vw, 2.16rem);
+                font-weight: bold;
+                text-align: left;
+            }
+            p:nth-child(3) {
+                font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+                line-height: clamp(1.25rem, 1rem + 1.07vw, 1.8rem);
+                color: #3D3E48;
+            }
+        }
+    }
+    .tour {
+        max-width: 1280px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 26px;
+        div {
+            width: 280px;
+            height: 282px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            img:hover {
+                transform: scale(1.2);
+                transition: all 0.1s linear;
+                cursor: pointer;
+            }
+            p {
+                width: 100%;
+                color: #A8A7AB;
+                font-size: 19.2px;
+            }
+            .city {
+                margin-top: 15px;
+            }
+
+        }
+    }
 }
