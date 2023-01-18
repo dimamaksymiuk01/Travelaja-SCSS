@@ -6,13 +6,10 @@
 
 // підключення компонентів до сторінки
 @import "./components/header";
-@import "./components/home";
+@import "./components/headerbase";
 @import "./components/footer";
+@import "./components/home";
 @import "./components/discover";
-@import "./components/headerdiscover";
-@import "./components/serviceheader";
 @import "./components/service";
-@import "./components/headernews";
 @import "./components/newscontent";
-@import "./components/aboutheader";
 @import "./components/aboutcontent";
