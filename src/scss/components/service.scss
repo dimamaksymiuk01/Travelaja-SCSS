@@ -71,7 +71,7 @@
             font-size: 16px;
         }
         div:nth-child(1) {
-            width: clamp(21.25rem, 20.114rem + 4.85vw, 23.75rem);
+            width: clamp(18.75rem, 16.932rem + 9.09vw, 23.75rem);
             height: 263px;
             border-radius: 10px;
             background-color: green;
@@ -79,7 +79,7 @@
             background-size: cover;
         }
         div:nth-child(2) {
-            width: clamp(21.25rem, 20.114rem + 4.85vw, 23.75rem);
+            width: clamp(18.75rem, 16.932rem + 9.09vw, 23.75rem);
             height: 263px;
             border-radius: 10px;
             background-color: green;
@@ -87,7 +87,7 @@
             background-size: cover;
         }
         div:nth-child(3) {
-            width: clamp(21.25rem, 20.114rem + 4.85vw, 23.75rem);
+            width: clamp(18.75rem, 16.932rem + 9.09vw, 23.75rem);
             height: 263px;
             border-radius: 10px;
             background-color: green;
@@ -240,7 +240,7 @@
             justify-content: center;
             gap: 24px;
             div {
-                width: 360px;
+                width: clamp(18.75rem, 17.386rem + 6.82vw, 22.5rem);
                 height: 240px;
                 display: flex;
                 .imgtp {
