@@ -13,6 +13,7 @@
     .lorem {
         flex-wrap: wrap;
         display: flex;
+
         .d {
             font-size: clamp(1.875rem, 1.011rem + 4.32vw, 4.25rem);
             max-width: 80px;
@@ -24,7 +25,7 @@
                 }
         }
         .ipsum {
-            font-size: clamp(0.625rem, 0.489rem + 0.68vw, 1rem);
+            font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
             line-height: clamp(1.063rem, 0.794rem + 1.34vw, 1.8rem);
             max-width: 790px;
             display: flex;
@@ -42,8 +43,8 @@
         @media screen and (max-width: 960px) {
             margin-top: 20px;
             iframe {
-                width: clamp(20rem, 1.818rem + 77.58vw, 60rem);
-                height: 300px;
+                width: clamp(17.5rem, 3.409rem + 70.45vw, 56.25rem);
+                height: clamp(12.5rem, 10.227rem + 11.36vw, 18.75rem);
             }
         }
     }
@@ -54,19 +55,23 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 61px;
+    margin-top: clamp(0.313rem, -0.96rem + 6.36vw, 3.813rem);
   }
   .left {
     width: clamp(20rem, 6.932rem + 55.76vw, 48.75rem);
     @media screen and (max-width: 1139px) {
         margin-top: 30px;
+        padding-left: 10px;
     }
     .natureone {
-        width: clamp(20rem, 6.932rem + 55.76vw, 48.75rem);
+        width: clamp(18.75rem, 7.841rem + 54.55vw, 48.75rem);
         height: clamp(12.5rem, 9.688rem + 12vw, 18.688rem);
         background-image: url("../img/discover/nature_1.png");
         background-size: cover;
         border-radius: 15px;
+        @media screen and (max-width: 960px) {
+            width: clamp(18.75rem, 7.841rem + 54.55vw, 48.75rem);
+        }
     }
     .memorable {
         margin-top: 20px;
@@ -75,6 +80,10 @@
             line-height: clamp(0.938rem, 0.426rem + 2.18vw, 2.063rem);
             letter-spacing: 1.7px;
             color: #3D3E48;
+            @media screen and (max-width: 960px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
         p:nth-child(2) {
             color: #3D3E48;
@@ -86,21 +95,32 @@
             img {
                 padding-right: 5px;
             }
+            @media screen and (max-width: 960px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
         p:nth-child(3) {
             margin-top: 20px;
-            font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+            font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
             color: black;
             line-height: clamp(0.938rem, 0.54rem + 1.7vw, 1.813rem);
             letter-spacing: 1px;
-
+            @media screen and (max-width: 960px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
         p:nth-child(4) {
             margin-top: 10px;
-            font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+            font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
             color: black;
             line-height: clamp(0.938rem, 0.54rem + 1.7vw, 1.813rem);
             letter-spacing: 1px;
+            @media screen and (max-width: 960px) {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
         }
     }
     .nature {
@@ -123,22 +143,31 @@
             background-size: cover;
             border-radius: 20px;
         }
+        @media screen and (max-width: 960px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
     p:nth-child(4) {
         margin-top: 20px;
-        font-size: clamp(0.75rem, 0.636rem + 0.48vw, 1rem);
+        font-size: clamp(0.875rem, 0.83rem + 0.23vw, 1rem);
         color: black;
         line-height: clamp(0.938rem, 0.54rem + 1.7vw, 1.813rem);
         letter-spacing: 1px;
+        @media screen and (max-width: 960px) {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
   }
 
   .right {
     width: clamp(20rem, 18.295rem + 7.27vw, 23.75rem);
+    background-color: b;
     margin-left: 20px;
     @media screen and (max-width: 1139px) {
         margin-top: 40px;
-        height: 1130px;
+        height: clamp(58.125rem, 53.241rem + 24.42vw, 70.625rem);
     }
     .grightcads {
         display: flex;
@@ -157,15 +186,21 @@
             font-size: clamp(0.875rem, 0.719rem + 0.67vw, 1.194rem);
             color: #3D3E48;
             letter-spacing: 1px;
+            @media screen and (max-width: 960px) {
+                padding-left: 10px;
+            }
         }
         span:nth-child(2) {
             font-size: clamp(0.875rem, 0.719rem + 0.67vw, 1.194rem);
             color:#43B97F;
+            @media screen and (max-width: 960px) {
+                padding-right: 30px;
+            }
         }
     }
     div {
-        width: clamp(20rem, 18.159rem + 7.85vw, 23.75rem);
-        height: clamp(13.75rem, 12.676rem + 4.58vw, 15.938rem);
+        width: clamp(18.75rem, 16.932rem + 9.09vw, 23.75rem);
+        height: clamp(13.125rem, 12.102rem + 5.11vw, 15.938rem);
         background-image: url("../img/discover/right_bar.png");
         background-size: cover;
         border-radius: 20px;
@@ -201,9 +236,17 @@
             margin-top: 40px;
         }
         button:hover {
-            background-color: #55a17c;
-            transform: scale(1.05);
-            transition: all 0.3s linear;
+            transform: scale(1.01);
+            transition: all 0.1s linear;
+            border: 3px solid white;
+            background-image: linear-gradient(
+                to right,
+                #0ba360,
+                #3cba92,
+                #30dd8a,
+                #2bb673
+              );
+            animation: bn54rotate 0.5s ease-in-out both;
         }
     }
 
@@ -212,10 +255,6 @@
 }
 
 
-.spaces {
-    width: 100%;
-    height: 100px;
-    @media screen and (max-width: 1139px) {
-        display: none;
-    }
-  }
+
+
+  

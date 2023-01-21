@@ -73,9 +73,16 @@
             border-color: #43B97F;
         }
         button:hover {
-            background-color: #55a17c;
-            transform: scale(1.05);
-            transition: all 0.3s linear;
+            transform: scale(1.03);
+            transition: all 0.1s linear;
+            background-image: linear-gradient(
+                to right,
+                #0ba360,
+                #3cba92,
+                #30dd8a,
+                #2bb673
+              );
+            animation: bn54rotate 0.5s ease-in-out both;
         }
     }
     .maps {
