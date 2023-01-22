@@ -33,10 +33,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        li:hover {
-          font-weight: bold;
-          color: #43B97F;
-        }
+
       }
       .ulhead {
         @media screen and (max-width: 900px) {
@@ -186,6 +183,47 @@
     }
     }
 
+    a {
+      background-image: linear-gradient(
+        to right,
+        #43B97F,
+        #43B97F 50%,
+        rgb(0, 0, 0) 50%
+      );
+      background-size: 200% 100%;
+      background-position: -100%;
+      display: inline-block;
+      padding: 5px 0;
+      position: relative;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      transition: all 0.3s ease-in-out;
+      
+    }
+    
+    a:before{
+      content: '';
+      background: #0095ff;
+      display: block;
+      position: absolute;
+      bottom: -3px;
+      left: 0;
+      width: 0;
+      height: 3px;
+      transition: all 0.3s ease-in-out;
+      
+    }
+    
+    a:hover {
+      background-position: 0;
+      cursor: pointer;
+      transform: scale(1.1);
+      transition: all 0.3s linear;
+    }
+    
+    a:hover::before{
+      width: 100%;
+    }
   }
 
 

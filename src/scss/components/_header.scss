@@ -33,9 +33,7 @@
       list-style: none;
       padding: 0;
       margin: 0;
-      li:hover {
-        font-weight: bold;
-      }
+
     }
     .ulhead {
       @media screen and (max-width: 900px) {
@@ -70,6 +68,51 @@
       line-height: 20px;
     }
   }
+
+
+  a {
+    background-image: linear-gradient(
+      to right,
+      #1f2321,
+      #151f1a 50%,
+      rgb(255, 255, 255) 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  a:before{
+    content: '';
+    background: #f7ff0b;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+    
+  }
+  
+  a:hover {
+    background-position: 0;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.3s linear;
+  }
+  
+  a:hover::before{
+    width: 100%;
+  }
+
+
 }
 .inpt {
   @include flex;
@@ -290,7 +333,7 @@
   margin: 0;
   padding: 30px 0;
   list-style: none;
-  background-color: #f9f2f2;
+  background-color: #292626;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   border-radius: 25px;
@@ -317,8 +360,10 @@ li {
   padding: 0;
   width: 80px;
   height: 20px;
+  
 }
 }
+
 
 
 
