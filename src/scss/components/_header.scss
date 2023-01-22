@@ -104,7 +104,6 @@
   a:hover {
     background-position: 0;
     cursor: pointer;
-    transform: scale(1.1);
     transition: all 0.3s linear;
   }
   
@@ -135,9 +134,8 @@
     display: flex;
   }
   .location {
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     width: 20px;
-    height: 62px;
     @include flex;
     padding-left: 5px;
     }
@@ -202,7 +200,7 @@
   .form {
     &__field {
       width: clamp(9.375rem, 3.693rem + 28.41vw, 21.875rem);
-      background-color:  white;
+      background-color:  rgb(249, 243, 243);
       color: rgb(23, 22, 22);
       font: inherit;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -219,7 +217,7 @@
       border-radius: 1px;
       width: clamp(9.375rem, 6.875rem + 12.5vw, 13.125rem);
       height: 18.4px;
-      background-color:  white;
+      background-color:  rgb(249, 243, 243);
       color: rgb(23, 22, 22);
       font: inherit;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -236,7 +234,7 @@
   .formz {
     &__fieldz {
       width: clamp(9.375rem, 6.534rem + 14.2vw, 15.625rem);
-      background-color:  white;
+      background-color:  rgb(249, 243, 243);
       color: rgb(23, 22, 22);
       font: inherit;
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
@@ -333,7 +331,7 @@
   margin: 0;
   padding: 30px 0;
   list-style: none;
-  background-color: #292626;
+  background-color: #111010;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
   transition-duration: .25s;
   border-radius: 25px;
